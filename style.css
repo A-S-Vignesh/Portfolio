@@ -7,9 +7,24 @@ body{
     /* color: #2F4F4F; */
 }
 
+canvas {
+    display: block;
+    position: absolute;
+}
+
+h1{
+    font-size: 4.375rem;
+}
+
 h2 {
     /* color: #71C9CE; */
     font-weight: normal;
+    font-size: 3.375rem;
+
+}
+
+h3{
+    font-size: 2.375rem;
 }
 
 p{
@@ -18,12 +33,26 @@ p{
     line-height: 2;
     text-indent: 100px;
 }
-.main-name{
-    /* font-family: 'Sacramento', Arial, sans-serif; */
-    font-size: 4.375rem;
-}
-.sub-name{
-    font-size: 3.375rem;
+
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3.375rem;
+        /* Reduce font size for smaller devices */
+    }
+
+    h2{
+        font-size: 2.375rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.375rem;
+    }
+
 }
  .top-container{
     background-color: #f7f7f7;
@@ -32,6 +61,35 @@ p{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.navlink{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px 4px 10px;
+    position: relative;
+}
+
+.navlink::before{
+    background-color: #007bff;
+    content: "";
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    transform: scaleX(0);
+    /* Initial width of 0 */
+    transition: all 0.3s ease;
+    /* Smooth transition for visibility and width */
+}
+.active{
+    color: #007bff;
+}
+.active::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 
 /* .name-container{
     position: absolute;
@@ -61,6 +119,8 @@ p{
     margin: 20px;
 }
 
+
+/* Education-details */
 .education-details-image{
     float: left;
     height: 100%;
@@ -82,10 +142,16 @@ p{
 }
 
 .education-details-list{
-    line-height: 2;
     font-size: 2rem;
+    line-height: 2;
     text-align: left;
 
+}
+
+@media screen and (max-width: 768px) {
+    .education-details-list{
+        font-size: 1.375rem;
+    }
 }
 
 /* project */
@@ -97,6 +163,11 @@ p{
 
 .border-img{
     border: 1px solid black;
+}
+
+.project-details{
+    line-height: 1;
+    font-size: 1.375rem;
 }
 
 
