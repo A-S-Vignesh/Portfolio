@@ -51,6 +51,7 @@ p{
     }
     p{
         font-size: 1.375rem;
+        line-height: 1.5;
     }
 
 }
@@ -100,13 +101,12 @@ p{
 
 /* Starting page*/
 
-.middle-container{
+/* .middle-container{
     height: auto;
     border: 2px solid black;
     margin: 20px;
     background-color:#f7f7f7;
-    /* background-color: #2F4F4F; */
-} 
+}  */
 
 .animated-icon{
     width: 100%;
