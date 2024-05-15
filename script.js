@@ -19,27 +19,27 @@ $(document).ready(function()
     // Navigation bar active link ends
 
     // scroll dedection starts
-    var allSection=document.querySelectorAll("section");  //selecting all section
-    window.addEventListener("scroll",function(){
-        var scrollPosition =document.documentElement.scrollTop;
+    // var allSection=document.querySelectorAll("section");  //selecting all section
+    // window.addEventListener("scroll",function(){
+    //     var scrollPosition =document.documentElement.scrollTop;
 
-        for(let i=0;i<navigationItem.length;i++)
-        {
-            var sectionTop = allSection[i].offsetTop-60;
-            var sectionBottom=sectionTop+allSection[i].offsetHeight;
+    //     for(let i=0;i<navigationItem.length;i++)
+    //     {
+    //         var sectionTop = allSection[i].offsetTop-60;
+    //         var sectionBottom=sectionTop+allSection[i].offsetHeight;
 
-            if (scrollPosition>=sectionTop&&scrollPosition<sectionBottom)
-            {
-                navigationItem.forEach(function(link){
-                    link.classList.remove("active");
-                });
-                navigationItem[i].classList.add("active");
-            }
-        }
+    //         if (scrollPosition>=sectionTop&&scrollPosition<sectionBottom)
+    //         {
+    //             navigationItem.forEach(function(link){
+    //                 link.classList.remove("active");
+    //             });
+    //             navigationItem[i].classList.add("active");
+    //         }
+    //     }
         
 
         
-    })
+    // })
 
 
 
