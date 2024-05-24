@@ -41,7 +41,7 @@ p {
 
 /* Add smooth transition */
 #navbar {
-    transition: top 0.3s;
+    transition: top 0.6s;
 }
 
 .navbar-hidden {
