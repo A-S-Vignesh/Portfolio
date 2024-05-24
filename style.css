@@ -126,18 +126,33 @@ p {
     text-align: left;
 }
 
-.box {
+/* project section */
+
+.project-container {
     margin-bottom: 20px;
-    border: 1px solid black;
+    /* Add shadow effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Horizontal offset, vertical offset, blur radius, color */
+    border-radius: 8px;
+    /* Optional: add border radius for rounded corners */
 }
 
-.border-img {
-    border: 1px solid black;
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .project-details {
-    line-height: 1;
-    font-size: 1.375rem;
+    padding: 20px;
+}
+
+.project-details h4 {
+    margin-top: 0;
+}
+
+.project-details p {
+    margin-bottom: 0;
 }
 
 /* Contact Me Section */
@@ -227,3 +242,5 @@ footer h6 {
     margin-top: 20px;
     font-size: 14px;
 }
+
+
