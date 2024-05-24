@@ -11,6 +11,21 @@ $(document).ready(function()
     });
   }
 
+  var lastScrollTop = 0;
+
+  $(window).scroll(function (event) {
+    var st = $(this).scrollTop();
+    console.log(st);
+    if (st > lastScrollTop) {
+      // Scroll down
+      $("#navbar").addClass("navbar-hidden");
+    } else {
+      // Scroll up
+      $("#navbar").removeClass("navbar-hidden");
+    }
+    lastScrollTop = st;
+  });
+
   // Navigation bar active link ends
 
   // scroll dedection starts
