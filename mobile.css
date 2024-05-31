@@ -1,3 +1,4 @@
+/* Mobile CSS */
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 3.375rem;
@@ -16,8 +17,14 @@
         font-size: 1.375rem;
         line-height: 1.5;
     }
+
     .education-details-list {
         font-size: 1.375rem;
     }
 
+    .name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
