@@ -2,7 +2,6 @@
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 3rem;
-        /* Reduce font size for smaller devices */
     }
 
     h2 {
