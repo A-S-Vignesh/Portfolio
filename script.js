@@ -11,20 +11,6 @@ $(document).ready(function()
     });
   }
 
-  //   Navigation bar active link ends
-//   var lastScrollTop = 0;
-
-//   $(window).scroll(function (event) {
-//     var st = $(this).scrollTop();
-//     if (st > lastScrollTop) {
-//       // Scroll down
-//       $("#navbar").addClass("navbar-hidden");
-//     } else {
-//       // Scroll up
-//       $("#navbar").removeClass("navbar-hidden");
-//     }
-//     lastScrollTop = st;
-//   });
 
   var allSection = document.querySelectorAll("section"); //selecting all section
   window.addEventListener("scroll", function () {
